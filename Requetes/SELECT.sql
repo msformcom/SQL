@@ -4,8 +4,8 @@
  prix unitaire => <100 Bon marché , 101 a 200 normal, 201 a 500 Cher >500 tres cher
 */
 SELECT	[NOM_PRODUIT] AS 'Product name',
-		[PRIX_UNITAIRE] * 1.2 AS 'Unit price',	-- calcul
-		[QUANTITE]  AS 'Quantity',
+		[PRIX_UNITAIRE] * 1.2 AS "Unit price",	-- calcul
+		[QUANTITE]  AS [Quantity],
 		[INDISPONIBLE]  AS 'Availibility',
 		CASE	WHEN INDISPONIBLE=0 THEN 'Dispo'   -- cas fonction de la valeur
 				WHEN INDISPONIBLE=-1 THEN 'Reappro'
